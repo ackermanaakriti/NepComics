@@ -17,6 +17,11 @@ body
     margin-bottom: 8px;
     padding: 10px;
 }
+.letsearch
+{
+   cursor: pointer;
+    border: none;
+}
 .main-search i
 {
 
@@ -26,8 +31,9 @@ border-bottom: 3px solid rgb(97, 192, 236);
 padding:9px;
 }
 .nav-container
-{  
-  
+
+{ 
+    position: relative;
     display: inline-flex;
     width:100%;
     background-image: linear-gradient(rgb(215, 241, 243),rgb(67, 167, 162),rgb(47, 117, 150));}
@@ -35,9 +41,7 @@ padding:9px;
 {
     font-size: 40px;
 }
-.nav-container ul{
-   
-}
+
 .nav-container ul li {
     display: inline-block;
     padding: 30px; 
@@ -52,19 +56,32 @@ padding:9px;
     text-decoration: none;
 }
 .nav-container ul li a:hover{
-border-bottom:3px solid rgb(7, 88, 99);
-color:khaki ;
+border: 2px solid rgb(59, 221, 233);
+color:rgb(47, 195, 240) ;
+background:rgb(0, 0, 0);
+
 }
 .right-nav
 {
+    display: inline-flex;
+ 
  margin-left: 120px;
  margin-top: 22px;
- 
- 
- 
 }
  
-
+.burger
+{
+left:45%;
+cursor:pointer;
+position: absolute;
+display: none;
+}
+.line{
+width: 33px;
+margin:3px 3px;
+height: 4px;
+background: rgb(124, 112, 112);
+}
 .input-btn
 {
     font-size: 18px;
@@ -100,31 +117,176 @@ font-size:18px;
 }
 @media  only screen and (max-width: 1070px){
      
-   .nav-container 
+   .nav-container
    {
    display:block;
-    
    }
-   .nav-container ul li {
-     
-    
-       
-   }
-   .right-nav
+   .second
    {
-  
+       display: block;
    }
    
 }
 @media  only screen and (max-width: 651px)
 {
-.nav-container ul li
+
+
+.show-repo
+{
+    opacity:0;
+}
+.burger
+{
+   display: block;
+   cursor: pointer;
+}
+.second
 {
     display: block;
 }
-.right-nav
-{
-    display: block;
+
 }
+.second
+{
+    display: inline-flex; 
+    margin-left: 150px;
+   
+}
+.grid
+{   width: 300px;
+   
+    background:rgb(187, 225, 235);
+    margin:12px;
+    
+  
+    
+}
+.img-card
+{ 
+    
+}
+.img-card img
+{
+   height: 250px;
+     margin-left: 48px;
+     margin-top: 20px;
+    width: 200px;
+    border-radius: 22px;
+}
+.card-content
+{  
+  text-align: center;
+    overflow: hidden;
+}
+.grid:hover{
+    box-shadow: 5px 10px 8px 10px #5eb4d6;
+    transform: translateY(2px);
+}
+.mybtn
+{
+    border: 2px solid rgb(9, 97, 90);
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+}
+.mybtn:hover{
+    background: rgb(230, 139, 35);
+}
+.mytxt
+{
+    color:rgb(5, 7, 133);
+    font-size: 30px;
+    margin-left: 200px;
+    margin-bottom: 9px;
+}
+.contactme
+{
+    background: linear-gradient(rgb(180, 158, 230) ,rgb(51, 100, 100), rgb(192, 237, 255)) ;
+    width:600px;
+    margin:  50px 0px 30px 300px;
+    height: 360px;
+    padding:10px;
+    border-radius: 10px;
+
+}
+.myemail
+{
+    display: inline-flex; 
+    
+}
+.myemail input{
+    padding: 8px;
+    width:200px;
+    border:2px transparent;
+    border-radius: 9px;
+}
+.subject input
+{
+    padding:8px;
+    margin:20px;
+    border:2px transparent;
+    border-radius: 9px;
+}
+.myemail
+{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.subject
+{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.msg { 
+    font-size: 20px;
+    color:whitesmoke;
+}
+
+.msg input
+{
+    padding:8px;
+    margin:20px; 
+    height: 100px;
+    overflow:visible;
+    width:300px;
+    border:2px transparent;
+    border-radius: 9px;
+}
+.submit
+{
+    width:100px;
+    padding: 10px;
+    border-radius: 22px;
+    font-size: 15px;
+    background:rgb(121, 19, 189);
+    color: whitesmoke;
+    
+}
+.submit:hover
+{
+
+background:rgb(178, 167, 238);
+color: #000;
+}
+.footlist{
+    background: rgb(22, 20, 22);
+    height: 150px;
+    margin-bottom: 15px;
+
+}
+.footlist ul
+{
+    display: inline-flex;
+    margin:  0px 10px 0px 390px;
+}
+.footlist ul li{
+  list-style: none;
+  margin:30px;
+  font-size: 40px;
+  
+
+}
+.footlist ul li a{
+    text-decoration: none;
 }
 
