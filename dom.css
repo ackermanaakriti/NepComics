@@ -1,3 +1,4 @@
+
 *
 {
     margin: 0;
@@ -5,24 +6,38 @@
 }
 body
 {
-    background-color:rgb(169, 191, 197)
+    background-color:rgb(220, 231, 231)
 }
-
-.nav-container
+.hr-line{
+   box-sizing: border-box;
+   border:none;
+   border-bottom: 3px solid cadetblue;
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+.main-search i
 {
-    
-position: relative;
+
+font-size: 18px;
+box-sizing: border-box;
+border-bottom: 3px solid rgb(97, 192, 236);
+padding:9px;
 }
+.nav-container
+{  
+  
+    display: inline-flex;
+    width:100%;
+    background-image: linear-gradient(rgb(215, 241, 243),rgb(67, 167, 162),rgb(47, 117, 150));}
 .logo-nav
 {
     font-size: 40px;
 }
 .nav-container ul{
    
-    
-    
-    background-image: linear-gradient(rgb(57, 199, 199),rgb(107, 60, 151),rgb(150, 216, 221));}
-
+}
 .nav-container ul li {
     display: inline-block;
     padding: 30px; 
@@ -30,68 +45,86 @@ position: relative;
     color:whitesmoke;
     font-size: 20px;
     align-content: center;
-
 }
 .nav-container ul li a{
     color:whitesmoke;
     font-size: 20px;
     text-decoration: none;
 }
-.nav-container ul li a:hover
-{
-    border-bottom: rgb(154, 180, 211) 2px solid;
-    color: #000;
+.nav-container ul li a:hover{
+border-bottom:3px solid rgb(7, 88, 99);
+color:khaki ;
 }
-.img-card
+.right-nav
 {
+ margin-left: 120px;
+ margin-top: 22px;
  
- width:100%;
  
- padding:20px 10px;
+ 
+}
+ 
+
+.input-btn
+{
+    font-size: 18px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.search-btn
+{
+    margin-left: 8px;
+font-size:18px;
+ height: 30px;
+ padding:5px;
+ border: 2px solid rgb(4, 4, 58);
+ border-radius: 20px;
+ overflow:hidden;
 
 }
-.first-card
+.search-btn:hover
 {
-display: inline-flex;
+  background: rgb(43, 151, 223); 
+  color: rgb(233, 239, 241);
 }
-
-.main-card
+.input-btn:hover{
+    background: rgb(43, 151, 223);
+    color: whitesmoke;
+}
+.myullinks
 {
-  
-   max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px black;
-    transition: 0.3s;
-    background:rgb(218, 228, 240);
-    margin: 20px;
-}
-.card-one
-{
-   width: 90%;
-}
-.onep-text
-{
-    
-}
-.img-card img{
-   width: 90%;
-}
-.img-card:hover.content
-{
-    transform:translateY(20px);
-
-}
-.myullinks{
     display: none;
-    position: absolute;
-    background-color: rgb(0, 44, 83);
 }
-.myullinks ul li{
-    display: flex;
-    visibility: hidden;  
+@media  only screen and (max-width: 1070px){
+     
+   .nav-container 
+   {
+   display:block;
+    
+   }
+   .nav-container ul li {
+     
+    
+       
+   }
+   .right-nav
+   {
+  
+   }
+   
 }
-.nav-container  ul:hover >.myullinks  li
+@media  only screen and (max-width: 651px)
 {
-    display: "";
-    visibility: visible;
+.nav-container ul li
+{
+    display: block;
 }
+.right-nav
+{
+    display: block;
+}
+}
+
