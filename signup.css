@@ -1,0 +1,62 @@
+body{
+    background: rgb(168, 168, 189);
+}
+
+ .signup{
+     display: inline-flex;
+    background:rgb(201, 201, 224);
+    height: 67%;
+    width: 50%;
+    position: relative;
+    left:30%;
+   top:100px;
+   border-radius: 9px;  
+}
+.signup:hover{
+    box-shadow: 5px 10px 8px 10px rgb(128, 144, 180) ;
+}
+img{
+    height: 300px;
+}
+.signup form
+{
+ margin-left: 100px;  
+}
+.signup form label
+{
+    font-size: 22px;
+    color: rgb(14, 43, 85);
+}
+.edit
+{
+  padding: 5px;  
+  /* border:2px solid rgb(97, 113, 126); */
+  border-radius: 5px;
+  max-width: fit-content;
+  border: none;
+
+}
+.edit:hover{
+    background:none;
+   border-bottom: 3px solid rgb(77, 127, 177);
+}
+.crtbtn
+{   margin: 7px 0px 5px 70px;
+    padding: 9px;
+    font-size: 15px;
+    border: 3px solid rgb(128, 117, 158);
+    border-radius: 15px;
+    background: rgb(128, 117, 158);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.crtbtn:hover{
+    background:rgb(128, 117, 158);
+}
+.socila
+{
+    margin: 7px 0px 5px 70px;  
+}
+.socila a{
+    padding: 20px;
+}
