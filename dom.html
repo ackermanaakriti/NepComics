@@ -1,5 +1,5 @@
-
-<!DOCTYPE html>
+         
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="html" href="signup.html">
     <title>Document</title>
 </head>
 <body>￼ 
 
     <nav>
         <div class="logo-nav">NepComics</div>
-        <div class="main-search"><input  class="hr-line" placeholder="search anything(manga)"> <button  type="button" class="letsearch"><i class="fa fa-search"></i></button> </div>
+        <div class="main-search"><input  class="hr-line" placeholder="search anything(manga)"> 
+            <button  type="button" class="letsearch"><i class="fa fa-search"></i></button> </div>
       
         <div class="nav-container " > 
             <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <i class="fa fa-bars" aria-hidden="true"></i>
     
             </div>
             <ul class="mylinklist show-repo" >
-                <li><a href="#">HOME</a></li>
+                <li><a href="#section">HOME</a></li>
                 <li><a href="#">TRENDING</a><div class="myullinks">
                  <ul >
                     <li><a href="#"> One Piece</a></li>
@@ -34,16 +34,19 @@
                 </div>
                  </li>   
                 <li><a href="#">GENRE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#contactme">CONTACT</a></li>
             </ul>
          
         <div class="right-nav  show-repo" >
             <button class="input-btn" type="submit">Sign In</button>
-            <button class="search-btn" type="submit">Sign Up</button>
+            <button class="search-btn" type="submit"><a href="signup.html"> Sign Up</a></button>
     </div>
     </div>
     </nav>
-    <div class="second">
+    <div class="newpage">
+
+    </div>
+    <div id="second">
         <div class="grid">
             <div class="img-card">
                 <img src="mynaruto2.jpg">
@@ -83,7 +86,7 @@
             </div>
         </div>
         </div>
-        <div class="second">
+        <div id="second">
    
     <div class="grid">
         <div class="img-card">
@@ -113,12 +116,12 @@
     <div class="card-content">
         <h3>Hunter X Hunter</h3>
         <p>Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, "Blade of Demon Destruction"[4]) is a Japanese manga series written and illustrated by Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his younger sister Nezuko turned into a demon.</p>
-            <button class="mybtn">Read More<span>&rarr;</span></span></button>
+            <button class="mybtn"> <a href="https://en.wikipedia.org/wiki/Naruto">Read More<span>&rarr;</span></span></a></button>
     </div>
 </div>
 
 </div>
-<div class="contactme">
+<div id="contactme">
     <h3 class="mytxt">Let's talk..</h3>
     <span class="myemail">
    <p> your name:<input type="text"></p>
@@ -147,6 +150,9 @@
    
    
                  
-    <script src="dom.js"></script>
+<script src="dom.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
+
 </html>
